@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/style-home.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-light bg-light" id="navigation">
+    <a class="navbar-brand" href="#">Messages</a>
+    <a class="navbar-brand" href="#"><img src="./images/lamentinlogo.png" class="rounded-circle lamentin"></a>
+    <a class="navbar-brand" href="http://localhost:3000/login">Déconnexion </a>
+  </nav>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <article class="col-md-3 left-side">
+          <div class="rounded-circle photo-profil"></div>
+          <p class="pseudo"><%=user.pseudo%></p>
+        </article>
+        <article class="col-md-6 center-side">
+          <div class="back-input">
+            <form>
+              <div class="row two-elements">
+                <input type="text" placeholder="What's up ?" class="form-control inputcenter" id="message"
+                  name="message">
+                <button id="send" type="submit" class="btn btn-success">Submit</button>
+              </div>
+            </form>
+          </div>
+          <%if (tweets.length > 0) { %>
+          <% tweets.forEach(function(element,index){ %>
+          <div class="container tweet-box">
+            <div class="row row-box">
+              <div class="col-md-2 left-tweet">
+                <div class="rounded-circle photo-profil-tweet"></div>
+              </div>
+              <div class="col-md-10 main-tweet">
+                <div class="row info-tweet">
+                  <p> <strong class="pseudo-tweet"><%=user.pseudo%></strong> <span class="tag-tweet">@beta</span> <span
+                      class="date-tweet"><%=element.date.toDateString();%></span></p>
+                </div>
+                <div class="row tweet-message">
+
+                  <p><%=element.message%></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+          <% } %>
+        </article>
+        <article class="col-md-2 right-side">
+          <%if (users.length > 0) { %>
+          <% users.forEach(function(element,index){ %>
+          <p><%=element.pseudo%></p>
+          <button class="follow" name=<%=element._id%>>BOUTON</button>
+          <% }); %>
+          <% } %>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="/assets/home_client.js"></script>
+</body>
+
+</html>

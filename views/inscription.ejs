@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style-inscription.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container center">
+
+        <img src="/images/lamentinlogo.png" class="rounded-circle lamentin">
+
+        <div class="test">
+            <div id="errorMessage" class="alert alert-danger" role="alert"></div>
+
+            <div id="successMessage" class="alert alert-success" role="alert"></div>
+
+            <form id="form">
+
+                <div class="form-group">
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" class="form-control inputcenter champ" id="pseudo" aria-describedby="pseudohelp"
+                        placeholder="Enter pseudo" name="pseudo" minlength="3" maxlength="10" required
+                        pattern="[A-Za-z]+">
+                    <span class="prevention">your pseudo must contain between 3 and 15 characters</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control inputcenter champ" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email" name="email" required pattern="[A-Za-z]+">
+                    <span class="prevention">ex : hello@world.com </span>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control inputcenter champ" id="password" placeholder="Password"
+                        name="password" required pattern="[A-Za-z]+" minlength="6">
+                    <span class="prevention">your password must contain between 6 and 25 characters</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" class="form-control inputcenter champ" id="password2" placeholder="Password"
+                        name="password2" required pattern="[A-Za-z]+" minlength="6">
+                    <span class="prevention">your password and confirmation password must match</span>
+                </div>
+
+                <button type="submit" class="btn btn-success" id="send">Submit</button>
+
+            </form>
+        </div>
+        <div id="resultat"></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="assets/inscription_client.js"></script>
+</body>
+
+
+
+</html>

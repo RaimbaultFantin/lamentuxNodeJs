@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(61, 63, 66);
+}
+
+.center{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(61, 63, 66);
+    padding: 20px;
+    color: white;
+}
+
+.prevention{
+    opacity: 50%;
+    color: rgb(131, 131, 131)
+}
+
+#errorMessage{
+    display: none;
+}
+
+#successMessage{
+    display: none;
+}
+
+.lamentin{
+    width: 75px;
+    height: 75;
+    margin: 5px;
+}
+
+.submit{
+    background-color: rgba(112, 255, 124, 0.808)
+}
+
+.inputcenter:focus {
+    border: 2px solid rgba(112, 255, 124, 0.808);
+  }
+
+.form-control:focus {
+    border: 2px solid rgba(112, 255, 124, 0.808);
+}

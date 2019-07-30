@@ -1,0 +1,140 @@
+body {
+  padding-top: 75px;
+  background-color: rgb(61, 63, 66);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.tweet-box{
+  height: auto;
+  margin-top: 10px;
+  border: solid 1pt rgba(112, 255, 124, 0.527);
+  cursor: pointer;
+  color: white;
+  transition: 0.4s;
+}
+
+.tweet-box:hover{
+  background-color: rgb(96, 98, 100);
+}
+
+.left-tweet{
+  display: flex;
+}
+
+.main-tweet{
+  display: flex;
+  flex-direction: column;
+}
+
+.info-tweet{
+  margin: 10px 0 5px 0;
+  width: 100%;
+}
+
+.tweet-message{
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.photo-profil-tweet{
+  margin: 5px auto auto auto;
+  background-color: blue;
+  width: 60px;
+  height: 60px;
+  border: solid 2pt rgba(112, 255, 124, 0.527);
+}
+
+.tag-tweet{
+  opacity: 0.5;
+}
+
+.date-tweet{
+  opacity: 0.5;
+}
+
+#navigation{
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.lamentin{
+  width: 50px;
+  height: 50px;
+}
+
+.left-side{
+  background-color:  rgb(75, 77, 80);
+  border: solid 0.5px rgba(227, 238, 255, 0.5);
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.center-side{
+  background-color:  rgb(75, 77, 80);
+  border: solid 0.5px rgb(227, 238, 255,0.5);
+  margin: 0 10px 0px 10px;
+  padding-bottom: 20px;
+  height: auto;
+}
+
+.right-side{
+  background-color:  rgb(75, 77, 80);
+  border: solid 0.5px rgb(227, 238, 255, 0.5);
+  margin: 0 auto 0 auto;
+  height: 100px;
+}
+
+.inputcenter:focus {
+  border: 2px solid rgba(112, 255, 124, 0.808);
+}
+
+.inputcenter{
+  width: 75%;
+  margin: auto
+}
+
+.blue{
+  background-color: blue;
+}
+
+.back-input{
+  width: auto;
+  background-color: rgba(112, 255, 124, 0.527);
+  padding: 6px;
+}
+
+.photo-profil{
+  width: 75px;
+  height: 75px;
+  background-color: cadetblue;
+}
+
+.pseudo{
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+
+.two-elements{
+  width: 100%;
+  height: auto;;
+}
+
+.newTweet{
+  color: white;
+  background-color: blue;
+  width: 100%;
+  padding: 15px 0 15px 0;
+}
+
+
+
+ .right-tweet{
+  padding: 12px;
+  width: 20%;;
+  height: auto;
+  background-color: black;
+}
